@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+
+
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>중간</title>
+
+
+
+	<style>
+
+
+		.dot h1 {
+
+  text-align: center;
+  position: absolute;
+  bottom: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+}
+		.center {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		/* 검은색 그라데이션 배경 스타일 */
+		.gradient-box {
+			background: linear-gradient(to bottom, #000000, #ffffff);
+			width: 100%;
+			height:5000px;
+			position: relative; /* 상대 위치 설정 */
+			z-index: 1; /* 그라데이션 위로 올리기 */
+		}
+
+		/* 이미지 컨테이너 스타일 */
+		.img-container {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 2; /* 그라데이션 아래로 내리기 */
+			position: relative;
+
+		}
+
+		/* 이미지 스타일 */
+		.img-container img {
+			display: block; /* 이미지를 블록 레벨 요소로 설정 */
+			margin: 0 auto; /* 가운데 정렬 */
+			padding-top: 10%;
+			max-width: 80%; /* 최대 너비 설정 */
+			max-height: 100%; /* 최대 높이 설정 */
+			object-fit: contain; /* 이미지 비율 유지 */
+		}
+		
+		.img-container img.tadak {
+          position: absolute;
+          width: 40%;
+          top: 15%; /* top 속성 추가 */
+          left:50%; /* left 속성 추가 */}
+       
+		
+		.line-img {
+			position: absolute;
+			top: 0%;
+			left: 2%;
+			width: 80%;
+			height: auto;
+			z-index: 3; /* 이미지 위로 올리기 */
+		}
+
+		.katok{
+			position: absolute;
+			 right: 5%;
+        top: 25%;
+			animation: phone 0.20s infinite alternate linear;}
+				@keyframes phone{
+			from{left: -5px;}
+			to{left:30px;}}
+
+		.katokbox img.katokbox{
+	  position: absolute; /* position: absolute; 추가 */
+  width:120%;
+  height: auto;
+  margin: auto;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);}
+
+.con {
+  position: absolute;
+
+  height: auto;
+  bottom: 20%;
+  left: 50%;
+
+  transform: translateX(-50%);
+  display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.con img.bd
+            {position: absolute;
+
+             width:50%;
+		
+             bottom: 65%;
+			 animation: phone 0.30s infinite alternate linear;}
+				@keyframes phone{
+			from{right: 1px;}
+			to{right:10px;}}
+
+			.con img.bd2
+            {position: absolute;
+
+             width:50%;
+			
+             bottom: 25%;
+			 animation: phone 0.05s infinite alternate linear;}
+				@keyframes phone{
+			from{right: 1px;}
+			to{right:10px;}}
+
+
+.pop img.pop{
+  position: absolute;
+  bottom: 5%;
+
+ left:25%;
+  max-width: 50%; /* 이미지 크기를 조정 */
+  animation: expand 0.5s alternate infinite ease-in-out;
+ 
+}
+
+@keyframes expand {
+  from {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+}
+
+
+
+
+      
+	
+
+</style>
+
+
+</head>
+
+
+<body>
+	<section class="center gradient-box">
+		
+		<div class="img-container">
+			<img src="laptop.png" alt="laptop">
+			<img src="line1.png" alt="line" class="line-img">
+			<img src="tadak.png" class="tadak">
+			<img src="katok.png" class=katok>
+            </div>
+
+			
+			<div class="katokbox">
+			<img src="katokbox.png" class="katokbox">
+		    </div>
+
+         <div class="dot"> 
+	     <h1>.<br>.<br>.<br></h1>
+         </div>
+
+        
+
+         
+         <div class="con"> 
+	     <img src="con.png" alt="con" width="1200">
+
+	     	<img src="bd.png" class="bd">
+	     	<img src="bd2.png" class="bd2">
+	    
+	     </div>
+
+	     <div class="pop">
+	     	<img src="pop.png" class="pop">
+	     </div>
+
+	 </section>
+
+
+
+</body>
+</html>
